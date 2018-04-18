@@ -5,10 +5,10 @@
     // TODO: convert defaults to object
     this.color = '#abc';
     this.bars = [];
-    this.dataset;
-    this.graphHolder;
-    this.min;
-    this.max;
+    this.dataset = [];
+    this.graphHolder = '';
+    this.min = 0;
+    this.max = 100;
 
     this.svgObj = {
       open: '<svg x="0" y="0" width="',
@@ -70,7 +70,7 @@
       this.graphHolder = this.setGraphHolder(graphContainer);
       this.setMinMax();
       this.createBars();
-      var svgWidth = this.bars.length * 15;
+      var svgWidth = this.bars.length * 15 + 5;
       var graphSvg = this.svgObj.open +
         svgWidth +
         this.svgObj.openSecond +
