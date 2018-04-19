@@ -4,8 +4,6 @@
   var listOutput = document.querySelector('.number-list-display');
   var createGraphBtn = document.querySelector('#create-graph-btn');
 
-  console.log(listOutput);
-
   var graphHolder = '.graph-holder';
   var resetData = false;
   var dataset = [];

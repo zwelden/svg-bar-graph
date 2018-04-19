@@ -12,8 +12,8 @@
 
     this.svgObj = {
       open: '<svg x="0" y="0" width="',
-      openSecond: '" height="100" viewBox="0, 0, ',
-      openThird: ', 100" style="border: 1px solid #aaa;">',
+      openSecond: '" height="102" viewBox="0, 0, ',
+      openThird: ', 102" style="border: 1px solid #aaa;">',
       // rect1: '<rect x="10" y="125" width="20" height="175" style="fill:red;" />',
       close: '</svg>'
     };
@@ -42,7 +42,7 @@
     };
 
     this.calculateYOffset = function (height) {
-      return 100 - height;
+      return 100 - height + 2; // +2 for top padding
     };
 
     this.createBar = function (dataPoint, index) {
